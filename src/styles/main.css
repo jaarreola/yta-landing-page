@@ -29,6 +29,14 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.yta_Home-icon {
+    color: white;
+    font-size: 42px;
+    position: absolute;
+    bottom: 42px;
 }
 
 .yta_AboutUs { 
@@ -90,7 +98,14 @@ a {
     color: #553457;
 }
 
-.yta_AdoptMe-card{
+.yta_AdoptMe-title i {
+    color: white;
+    display: block;
+    margin-bottom: 20px;
+    font-size: 42px;
+}
+
+.yta_AdoptMe-card {
     background-color: #553457;
     text-align: center;
     max-width: 400px;
@@ -108,10 +123,32 @@ a {
     padding: 30px;
 }
 
+.yta_AdoptMe-card-img + div i {
+    margin-top: -40px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.yta_AdoptMe-card-img + div i::before {
+    padding: 10px;
+    background: #553457;
+    border-radius: 50%;
+    font-size: 32px;
+}
+
 .yta_AdoptMe-card-img + div h3 {
     font-size: 20px;
     text-transform: uppercase;
     margin-bottom: 10px;
+}
+
+.yta_AdoptMe > i {
+    color:white;
+    background-color: #ffc85e;
+    padding: 40px;
+    display: block;
+    font-size: 42px;
+    text-align: center;
 }
 
 .yta_Camp {
