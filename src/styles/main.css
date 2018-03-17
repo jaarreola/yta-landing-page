@@ -29,6 +29,60 @@ a {
     border: 0 !important;
 }
 
+.yta_Menu {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    color: white;
+}
+
+.yta_Menu i:first-of-type {
+    cursor: pointer;
+}
+
+.yta_Menu i:last-of-type {
+    font-size: 20px;
+}
+
+.yta_Menu i {
+    position: relative;
+    z-index: 1;
+}
+
+.yta_Menu-list {
+    position: fixed;
+    background: #553457;
+    left: 0;
+    right: 0;
+    top: 0;
+    text-align: center;
+    padding-top: 0;
+    bottom: 100%;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    height: 0;
+}
+
+.yta_Menu-list.is-opened {
+    bottom: 0;
+    padding-top: 80px;
+    height: 100vh;
+}
+
+.yta_Menu-list li a {
+    display: block;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.yta_Menu-list li a:hover {
+    background-color: #3d183f;
+}
+
 .yta_Home{
     height: 600px;
     height: 100vh;
